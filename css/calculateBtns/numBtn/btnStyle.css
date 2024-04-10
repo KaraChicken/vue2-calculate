@@ -1,0 +1,48 @@
+/* 按鍵區 */
+
+.Btns {
+  width: 15rem;
+  height: 19rem;
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+.Btns > div {
+  width: 25%;
+  height: 20%;
+  position: relative;
+  border-radius: 0.45rem;
+  background: linear-gradient(to bottom, #282828, #202020);
+  box-shadow: inset -8px 0 8px rgba(0, 0, 0, 14%), inset -8px 0 8px rgba(0, 0, 0, 25%)
+  0 0 2px rgba(0, 0, 0, 75%), 10 20 25 rgba(0, 0, 0, 40%);
+}
+
+.Btns > div:active {
+  opacity: 0.95;
+}
+
+.Btns > div::before {
+  content: '';
+  position: absolute;
+  border-radius: 0.35rem;
+  top: 3px;
+  left: 4px;
+  bottom: 14px;
+  right: 12px;
+  background: linear-gradient(to right, #232323, #4a4a4a);
+}
+
+.Btns div > li {
+  position: relative;
+  /* 減陰影高度 */
+  height: calc(100% - 14px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 1.25rem;
+}

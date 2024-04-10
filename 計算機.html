@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>計算機實作</title>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/3.4.21/vue.global.js'></script>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  <div id="app">
+    <div id="main" class="main">
+      <div id="BtnCantainer" class="BtnCantainer">
+        <input id="display" class="display" disabled v-model="current"/>
+        <div class="Btns">
+          <div v-for="btns in 10" @click="Append(btns-1)">
+            <li>{{ btns-1 }}</li>
+          </div>
+          <div @click="Plus">
+            <li>+</li>
+          </div>
+          <div @click="Minus">
+            <li>-</li>
+          </div>
+          <div @click="Multiplied">
+            <li>×</li>
+          </div>
+          <div @click="Divided">
+            <li>÷</li>
+          </div>
+          <div @click="ClearDisplay">
+            <li>C</li>
+          </div>
+          <div @click="BackSpace">
+            <li>←</li>
+          </div>
+          <div @click="equal">
+            <li>=</li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="./js/BtnProps.js"></script>
+</body>
+</html>

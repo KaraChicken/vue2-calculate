@@ -1,0 +1,15 @@
+/* 全域 */
+* {
+  margin: 0;
+  padding: 0;
+  block-size: border-box;
+}
+
+body {
+  display: flex;
+  background: 	#4F4F4F;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+}

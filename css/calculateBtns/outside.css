@@ -1,0 +1,12 @@
+/* 外殼 */
+.main {
+  width: 17rem;
+  height: 25rem;
+  border-radius: 7px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #282828;
+}

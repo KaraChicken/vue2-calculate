@@ -1,0 +1,16 @@
+/* 顯示螢幕 */
+.display {
+  width: 100%;
+  height: 2.5rem;
+  box-sizing: border-box;
+  margin: 0;
+  margin-bottom: 1rem;
+  padding: 0;
+  padding-left: 1rem;
+  border: none;
+  border-radius: 3px;
+}
+
+.display:disabled {
+  background: #fcf7f7dd;
+}

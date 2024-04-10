@@ -1,0 +1,8 @@
+/* 全域 */
+@import url('./var.css');
+
+/* 計算器樣式 */
+@import url('./calculateBtns/BtnStyleMenu.css');
+
+/* 開關燈 */
+@import url('./light/light.css');

@@ -1,0 +1,70 @@
+
+
+/* 
+  【所有按鍵順序】
+  1 到 9 依序是數字 0~9
+  10 到 14 依序是 加減乘除
+  15 清除
+  16 退後鍵
+  17 等於
+*/
+.BtnCantainer div:nth-child(1) {
+  /* 按鍵 0 */
+  order: 16;
+  width: 75%;
+}
+
+.BtnCantainer div:nth-child(2),
+.BtnCantainer div:nth-child(3),
+.BtnCantainer div:nth-child(4) {
+  /* 按鍵 1、2、3 */
+  order: 9;
+}
+
+.BtnCantainer div:nth-child(5),
+.BtnCantainer div:nth-child(6),
+  .BtnCantainer div:nth-child(7) {
+  /* 按鍵 4、5、6 */
+  order: 7;
+}
+
+.BtnCantainer div:nth-child(8),
+.BtnCantainer div:nth-child(9),
+.BtnCantainer div:nth-child(10) {
+  /* 按鍵 7、8、9 */
+  order: 5;
+
+}
+
+.BtnCantainer div:nth-child(11) {
+  /* 加號 */
+  order: 8;
+}
+
+.BtnCantainer div:nth-child(12) {
+  /* 減號 */
+  order: 6;
+}
+.BtnCantainer div:nth-child(13) {
+  /* 乘號 */
+  order: 4;
+}
+.BtnCantainer div:nth-child(14) {
+  /* 除號 */
+  order: 3;
+}
+.BtnCantainer div:nth-child(15) {
+  /* 清除 */
+  order: 1;
+}
+.BtnCantainer div:nth-child(16) {
+  /* 退後 */
+  order: 2;
+}
+.BtnCantainer div:nth-child(17) {
+  /* 等於 */
+  order: 17;
+  height: 40%;
+  position: relative;
+  bottom: 20%;
+}
