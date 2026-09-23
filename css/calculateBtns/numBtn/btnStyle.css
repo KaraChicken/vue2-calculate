@@ -1,5 +1,4 @@
 /* 按鍵區 */
-
 .Btns {
   width: 15rem;
   height: 19rem;
@@ -8,21 +7,28 @@
   color: #fff;
 }
 
-.Btns > div {
+.Btns > button {
   width: 25%;
   height: 20%;
   position: relative;
+  border: 0;
+  padding: 0;
   border-radius: 0.45rem;
   background: linear-gradient(to bottom, #282828, #202020);
-  box-shadow: inset -8px 0 8px rgba(0, 0, 0, 14%), inset -8px 0 8px rgba(0, 0, 0, 25%)
-  0 0 2px rgba(0, 0, 0, 75%), 10 20 25 rgba(0, 0, 0, 40%);
+  box-shadow:
+    inset -8px 0 8px rgba(0, 0, 0, 14%),
+    inset -8px 0 8px rgba(0, 0, 0, 25%),
+    0 0 2px rgba(0, 0, 0, 75%),
+    10px 20px 25px rgba(0, 0, 0, 40%);
+  cursor: pointer;
+  color: #fff;
 }
 
-.Btns > div:active {
+.Btns > button:active {
   opacity: 0.95;
 }
 
-.Btns > div::before {
+.Btns > button::before {
   content: '';
   position: absolute;
   border-radius: 0.35rem;
@@ -31,18 +37,17 @@
   bottom: 14px;
   right: 12px;
   background: linear-gradient(to right, #232323, #4a4a4a);
+  pointer-events: none;
 }
 
-.Btns div > li {
-  position: relative;
-  /* 減陰影高度 */
-  height: calc(100% - 14px);
+.Btns > button {
   display: flex;
   justify-content: center;
   align-items: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  color: #fff;
+}
+
+.Btns > button > span {
+  position: relative;
+  z-index: 1;
   font-size: 1.25rem;
 }
