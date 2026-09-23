@@ -79,16 +79,16 @@ const backspace = () => {
           type="button"
           @click="append(number - 1)"
         >
-          {{ number - 1 }}
+          <span>{{ number - 1 }}</span>
         </button>
 
-        <button type="button" @click="plus">+</button>
-        <button type="button" @click="minus">-</button>
-        <button type="button" @click="multiplied">×</button>
-        <button type="button" @click="divided">÷</button>
-        <button type="button" @click="clearDisplay">C</button>
-        <button type="button" @click="backspace">←</button>
-        <button type="button" @click="equal">=</button>
+        <button type="button" @click="plus"><span>+</span></button>
+        <button type="button" @click="minus"><span>-</span></button>
+        <button type="button" @click="multiplied"><span>×</span></button>
+        <button type="button" @click="divided"><span>÷</span></button>
+        <button type="button" @click="clearDisplay"><span>C</span></button>
+        <button type="button" @click="backspace"><span>←</span></button>
+        <button type="button" @click="equal"><span>=</span></button>
       </div>
     </div>
   </main>
