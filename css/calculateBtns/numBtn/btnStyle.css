@@ -41,15 +41,13 @@
 }
 
 .Btns > button {
-  font-size: 1.25rem;
-}
-
-.Btns > button::after {
-  content: attr(data-label);
-}
-
-.Btns > button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.Btns > button > span {
+  position: relative;
+  z-index: 1;
+  font-size: 1.25rem;
 }
